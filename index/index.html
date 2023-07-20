@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="../js/main.js"></script> -->
+    <h1 id="bvc"></h1>
+    <label id="" for="">nhap A</label>
+    <input id="a" type="number" name="" value="">
+    <label for="">nhap B</label>
+    <input id="b" type="number" name="" >
+    <button onclick="sum()">Tinh tong</button>
+  
+<script>
+    function sum() {
+        let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+        let sum = Number(a)+Number(b)
+        document.getElementById("bvc").innerHTML=sum;
+
+    }
+</script>
+
+</body>
+</html>
