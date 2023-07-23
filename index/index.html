@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- <script src="../js/main.js"></script> -->
-    <h1 id="bvc"></h1>
-    <label id="" for="">nhap A</label>
-    <input id="a" type="number" name="" value="">
-    <label for="">nhap B</label>
-    <input id="b" type="number" name="" >
-    <button onclick="sum()">Tinh tong</button>
+    <!-- <h1 style="height: 30px; width: 400px; background-color:rgba(0, 0, 0, 0.159) ;color: white; " id="in"></h1>
+    <div style="display: flex;
+    flex-direction: column;
+    text-align: center; width: 400px; background-color: blue;" >
+        <label id="" for="">nhap A</label>
+        <input sty id="a" type="number" name="" value="" placeholder="nhap vo:">
+        <label for="">nhap B</label>
+        <input id="b" type="number" name="" placeholder="nhap vo">
+        <div>
+        <button onclick="sum()">Addition(+)</button>
+        <button onclick="tru()">Subtraction(-)</button>
+        <button onclick="nhan()">Multipcation(X)</button>
+        <button onclick="chia()">Division(/)</button>
+        <input onclick="reset()" type="reset" value="reset" id="reset"> -->
+    <!-- </div>
+    </div>
+  
+    
   
 <script>
     function sum() {
         let a=document.getElementById('a').value;
         let b=document.getElementById('b').value;
         let sum = Number(a)+Number(b)
-        document.getElementById("bvc").innerHTML=sum;
+        document.getElementById("in").innerHTML=sum;
 
     }
-</script>
+    function tru(){
+          let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+         let tru = a-b
+        document.getElementById("in").innerHTML=tru;
+        
+    }
+    function nhan(){
+          let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+         let nhan = a*b
+        document.getElementById("in").innerHTML=nhan;
+        
+    }
+    function chia(){
+          let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+         let chia = a/b
+        document.getElementById("in").innerHTML=chia;
+        
+    } -->
+    <!-- function reset() {
+   document.getElementById("myForm").reset();
+         document.getElementById("reset").reset();
+    } -->
 
+    <!-- </script> -->
+
+    <!-- <script>
+        let a = +prompt(`nhap so a vao day`);
+        let nhanchia = prompt(`phep tinh \(\+,\-,\*,\/\):`);
+        let b = +prompt(`nhap b vao day`);
+        let = rsoi;
+
+        switch (nhanchia) {
+            case "+":
+                rsoi = a + b;
+
+                break;
+            case "-":
+                rsoi = a - b;
+                break;
+            case "*":
+                rsoi = a * b;
+                break;
+            case "/":
+                rsoi = a / b;
+
+                break;
+
+
+        }
+        document.write(`ket qua ${rsoi}`)
+
+    </script> -->
+
+    <script>
+        let a = +prompt(`nhap a`)
+        let b = +prompt(`nhap b`)
+        let c = +prompt(`nhap c`)
+
+        let check = (a + b > 0 && b + c > a && a + c > b)
+        if (a, b, c > 0) {
+            if (check) {
+                document.write(`la canh cuong cua 1 tamm giac `)
+            } else {
+                document.write(`khong la canh vuong cua tam giac`)
+            }
+        }
+
+
+
+
+    </script>
 </body>
+
 </html>

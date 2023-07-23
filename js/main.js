@@ -372,21 +372,13 @@
 // }
 
 // bai 6
-// let color = prompt(`nhap mau vao day xanh ,tim  , vang:`)
-// if (color= xanh) {
-//     document.write(`mau xanh`)
+// let color = prompt("Nhập một màu (xanh, đỏ, hoặc vàng):");
 
-// } else
-//     if (color = tim) {
-//         document.write(`mau do`)
-
-
-// }else if (color = vang) {
-//     document.write(`mau vang`)
+// if (color === "xanh" || color === "do" || color === "vang") {
+//     document.write("Màu bạn vừa nhập là: " + color);
 // } else {
-//         document.write(`khong dung mau`)
-//     }
-
+//     alert("Màu không hợp lệ!");
+// }
 
 // bai 8
 // let weight=+prompt (`nhap can nang vao day`)
@@ -582,3 +574,316 @@
 // }
 
 // document.write("Cung hoàng đạo của bạn là: " + zodiac);
+
+
+
+
+
+// let num1 = +prompt(`nhap so thứ nhất `)
+// let char = prompt(`chọn các phép tính + ,-,*,/:`)
+// let num2 = +prompt(`Nhập số thứ 2`)
+// let result;
+// switch (char) {
+//     case '+':
+//         result = Number(num1) + Number(num2);
+
+//         break;
+//     case '-':
+
+//         result = num1 - num2;
+//         break;
+//     case '*':
+//         result = num1 * num2;
+
+//         break;
+//     case '/':
+//         result = num1 / num2;
+//         break;
+//     default:
+//         alert(`Phep tinh khong hop le`)
+
+
+// }
+// // alert(`ket qua la :${result}`);
+// document.write(`ket qua la : ${result}`)
+
+
+// luyện tập cấu trúc điều kiện 01
+// bài 1
+// let a = +prompt(`nhap so a vao day :`)
+// let b = +prompt(`nhap so b vao day:`)
+// if (a % b == 0) {
+//     document.write(`a chia het cho b`)
+// } else {
+//     document.write(`a khong chia het cho b`)
+// }
+
+
+// bai2
+// let age = +prompt(`nhap tuoi hoc sinh vao day`)
+// if (age >= 15) {
+//     document.write(`du tuoi vao lop 10`)
+// } else {
+//     document.write(`hoc sinh do khong du dieu kien vao lowp 10`)
+// }
+
+
+// bai 3
+// let a = +prompt(`nhap so nguyen bat ki`)
+// if (a > 0) {
+//     document.write(`số đó là lớn hon 0`)
+
+// } else {
+//     document.writeln(`so nho hon 0`)
+
+// }
+
+
+
+
+
+// bai4
+// let a = +prompt(`nhap so nguyen a vao day:`);
+// let b = +prompt(`nhap so nguyen b vao day:`);
+// let c = +prompt(`nhap so nguyen c vao day:`);
+// let integer = a > 0 && b > 0 && c > 0;
+// if (integer) {
+//     document.write(`la so nguyen`)
+//     if (a > b && a > c) {
+//         // a lon nhat
+//         document.write(`gia tri lon nhat la ${a}`)
+
+//     } else if (b < c) {
+//         // c lon nhat
+//         document.write(`gia tri lon nhat la ${c}`)
+
+//     } else {
+//         // c lon nhat
+//         document.write(`gia tri lon nhat la ${b}`)
+//     }
+
+// } else {
+//     document.write(`khong la so nguyen`)
+
+// }
+
+
+
+
+
+// bai 5
+
+
+// let a = +prompt(`nhap bai kiem tra 1`)
+// let b = +prompt(`nhap bai thi giua ki`)
+// let c = +prompt(`nhap bai thi cuoi ki:`)
+// let total = (a + (b * 2) + (c * 3)) / 6
+// if (total < 6.4) {
+//     document.write(`trung binh`)
+// } else if (total < 8) {
+//     document.write(`kha`)
+
+// } else if (total <= 10) {
+//     document.write(`gioi`)
+// } else {
+//     document.write(`yeu`)
+// }
+
+
+
+
+
+
+// bai 6
+
+
+
+
+// let a = +prompt(`nhap so san pham ban duoc`)
+// if (a < 20) {
+//     document.write(`nhan hoa hong 3% moi san pham`)
+// } else if (a <= 50) {
+//     document.write(`nhan hoa hong 5% moi san pham`)
+// } else if (a <= 100) {
+//     document.write(`nhan hoa hong 10% moi san pham`)
+
+// } else if (a <= 500) {
+//     document.write(`nhan hoa hong 20% moi san pham`)
+// } else if (a <= 1500) {
+//     document.write(`nhan hoa hong 50% moi san pham`)
+
+// } else {
+//     document.write(`nhan hoa hong 60% moi san pham`)
+// }
+
+
+
+
+// bai 7
+
+
+// Phí thuê bao bắt buộc là 25 nghìn.
+
+// 600 đồng cho mỗi gọi của 50 phút đầu tiên.
+
+// 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+
+// 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
+// Các thông số đầu vào
+
+
+
+
+// let soNguoiTrongHo = 4; // Số người trong hộ gia đình
+// let soCuocGoi = 250; // Số lượng cuộc gọi trong một tháng
+// let soPhutSuDungDuLieu = 500; // Số lượng phút sử dụng dữ liệu di động trong một tháng
+// const phiThueBaoBatBuoc = 25000; // Phí thuê bao bắt buộc
+
+// // Tính toán cước điện thoại
+// let cuocPhi = phiThueBaoBatBuoc;// Khởi tạo cước phí bằng phí thuê bao bắt buộc
+
+// if (soCuocGoi > 0) {
+//     cuocPhi += 600 * Math.min(50, soCuocGoi); // Tính cước cho 50 phút đầu tiên
+//     if (soCuocGoi > 50 && soCuocGoi <= 200) {
+//         cuocPhi += 400 * (Math.min(150, soCuocGoi) - 50); // Tính cước cho 150 phút tiếp theo
+//     } else if (soCuocGoi > 200) {
+//         cuocPhi += 400 * 100; // Tính cước cho 150 phút tiếp theo
+//         cuocPhi += 200 * (soCuocGoi - 200); // Tính cước cho bất kỳ phút nào sau 200 phút đầu tiên
+//     }
+// }
+
+// if (soPhutSuDungDuLieu > 0) {
+//     cuocPhi += 200 * soPhutSuDungDuLieu; // Tính cước cho dữ liệu di động
+// }
+
+// // Tính toán cước phí trung bình cho mỗi người trong hộ gia đình
+// const cuocPhiTrungBinh = cuocPhi / soNguoiTrongHo;
+
+// document.write("Cước phí điện thoại cho hộ gia đình là: " + cuocPhi + " đồng");
+// document.write("Cước phí trung bình cho mỗi người trong hộ gia đình là: " + cuocPhiTrungBinh + " đồng");
+
+
+
+
+// bai1
+
+// let a = +prompt("Hãy nhập số điện(kWh)");
+// let x;
+// if (a <= 50) {
+//     x = a * 1678;
+// }
+// else if (a <= 100) {
+//     x = (a - 50) * 1734 + 50 * 1678;
+// }
+// else if (a <= 200) {
+//     x = (a - 100) * 2014 + 50 * 1678 + 50 * 1734;
+// }
+// else if (a <= 300) {
+//     x = (a - 200) * 2536 + 50 * 1678 + 50 * 1734 + 100 * 2014;
+// }
+// else if (a <= 400) {
+//     x = (a - 300) * 2834 + 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536;
+// }
+// else {
+//     x = (a - 400) * 2927 + 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834;
+// }
+// document.write(`Giá điện bán lẻ là ${x} đồng`);
+
+
+// phan2
+// bai1
+
+// let a = +prompt(`nhap a vao day`);
+// let b = +prompt(`nhap b vao day`);
+// if (a == 0 && b == 0) {
+//     document.write(`thi phuong trinh co vo so nghiem`)
+
+// } else if (a == 0 && b != 0) {
+//     document.write(`phuong trinh vo nghiem`)
+// } else  {
+//     let x = -b / a;
+//     document.write(`phuong trinh co nghiem duy nhat ${x}`)
+// }
+
+// let a = +prompt(`nhap a vao day`);
+// let b = prompt(`nhap b vao day`);
+// let c = prompt(`nhap c vao day`)
+
+// if (a !== 0) {
+//     let delta = b * b - 4 * a * c;
+//     if (delta > 0) {
+//         let x1 = (-b + sqrt(delta)) / (2 * a)
+//         let x2 = (-b - sqrt(delta)) / (2 * a)
+//         document.write(`hai nghiem phan biet la:${x1} &{x2} `)
+//     } else if (delta = 0) {
+//         let x = -b / 2 * a
+//         document.write(`cos nghiem kep ${x}`)
+
+//     } else {
+//         document.write(`phuong trinh vo nghiem`)
+//     }
+// }
+
+
+// cách gải pt bậc 2
+// let a = +prompt("Hãy nhập hệ số a của pt ");
+// let b = +prompt("Hãy nhập hệ số b của pt ");
+// let c = +prompt("Hãy nhập hệ số c của pt ");
+// if (a !== 0) {
+//     // ax2+bx+c=0 (a≠0)
+//     let delta = b * b - 4 * a * c;
+//     if (delta < 0) {
+//         document.write("phương trình vô nghiệm");
+//     } else if (delta == 0) {
+//         let x = -b / (2 * a);
+//         document.write("phương trình có 2 nghiệm kép x1=x2= " + x);
+//     } else {
+//         let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+//         let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+//         document.write("Phương trình có nghiệm x1=" + x1);
+//         document.write("Phương trình có nghiệm x2=" + x2);
+//     }
+// }
+
+
+
+// let a = +prompt(`Mời bạn nhập vào số a:`);
+// let b = +prompt(`Mời bạn nhập vào số b:`);
+// let caculator = prompt(`Nhập dấu phép tính \(\+,\-,\*,\/\):`);
+// let rs;
+// switch (caculator) {
+//     case "/":
+//         if (b == 0) {
+//             alert("Không thể chia một số  cho không");
+//         } else {
+//             rs = a / b;
+//         }
+//         break;
+//     case "+":
+//         rs = a + b;
+//         break;
+
+//     case "-":
+//         rs = a - b;
+//         break;
+
+//     case "*":
+//         rs = a * b;
+//         break;
+// }
+// alert(`Kết quả của phép tính trên là: a ${caculator} b = ${rs}`);
+
+
+
+
+const number = Number(prompt('Nhập vào một số lớn hơn 0'));
+for (let i = 0; i <= number; i++) {
+    // Khối câu lệnh thực thi
+} for (let i = 0; i <= number; i++) {
+    // Nếu phần dư của phép tính i chia 2 bằng 0, nghĩa là số chẵn
+    if (i % 2 === 0) {
+        // Nếu điều kiện trong if đúng, khối lệnh được thực thi
+        console.log('Số chẵn là: ', i);
+    }
+}
+
